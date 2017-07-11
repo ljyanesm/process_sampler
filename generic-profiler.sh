@@ -99,7 +99,7 @@ startmon() {
         timestamp=$(date +%s)
 
         # Check if the process has started by looking at the .pid file
-        if [ -e ${PROFILE_OUTPUT_DIR}/w2rap-contigger.pid ] ; then
+        if [ -e ${PROFILE_OUTPUT_DIR}/myJob.pid ] ; then
             my_pid=$(cat ${PROFILE_OUTPUT_DIR}/myJob.pid)
         fi
         if [ ! -z "${my_pid}" ]; then
